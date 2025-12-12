@@ -5,7 +5,7 @@
 
 Name:		python-pytest-subtests
 Version:	0.14.1
-Release:	1
+Release:	2
 Summary:	Unittest subTest() support and subtests fixture
 URL:		https://pypi.org/project/pytest-subtests/
 License:	MIT
