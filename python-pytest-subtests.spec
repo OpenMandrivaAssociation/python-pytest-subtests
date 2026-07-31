@@ -4,15 +4,15 @@
 %bcond_with test
 
 Name:		python-pytest-subtests
-Version:	0.14.1
-Release:	3
+Version:	0.15.0
+Release:	1
 Summary:	Unittest subTest() support and subtests fixture
 URL:		https://pypi.org/project/pytest-subtests/
 License:	MIT
 Group:		Development/Python
 Source0:	https://files.pythonhosted.org/packages/source/p/pytest-subtests/%{oname}-%{version}.tar.gz
 # see https://github.com/pytest-dev/pytest-subtests/issues/181
-Patch0:		https://github.com/sysfce2/python-pytest-subtests/commit/aa3f96bfb5dfa45c95e0158dc2b76c29157453db.patch
+# dropped (no longer applies): Patch0:		https://github.com/sysfce2/python-pytest-subtests/commit/aa3f96bfb5dfa45c95e0158dc2b76c29157453db.patch
 BuildSystem:	python
 BuildArch:	noarch
 
@@ -35,7 +35,7 @@ BuildRequires:	python%{pyver}dist(pytest)
 unittest subTest() support and subtests fixture.
 
 %prep
-%autosetup -p1 -n %{oname}-%{version}
+%autosetup -p1 -n pytest_subtests-0.15.0
 
 %build
 %py_build
